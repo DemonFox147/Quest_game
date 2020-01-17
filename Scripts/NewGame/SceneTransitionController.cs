@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml;
@@ -63,10 +63,12 @@ public class SceneTransitionController : MonoBehaviour
                         arrowsGO[0].SetActive(true);
                         arrowsGO[0].transform.GetChild(0).GetComponent<SceneTransitionButton>().NextRoom = arrow.Attributes["name"].Value;
                         arrowsGO[0].transform.GetChild(0).GetComponent<SceneTransitionButton>().ArrowDirection = arrow.Name;
+                        
                         float xMin = float.Parse(arrow.Attributes["xMin"].Value);
                         float xMax = float.Parse(arrow.Attributes["xMax"].Value);
                         float yMin = float.Parse(arrow.Attributes["yMin"].Value);
                         float yMax = float.Parse(arrow.Attributes["yMax"].Value);
+                        
                         arrowsGO[0].GetComponent<RectTransform>().anchorMin = new Vector2(xMin, yMin);
                         arrowsGO[0].GetComponent<RectTransform>().anchorMax = new Vector2(xMax, yMax);
                         break;
@@ -76,10 +78,12 @@ public class SceneTransitionController : MonoBehaviour
                         arrowsGO[1].SetActive(true);
                         arrowsGO[1].transform.GetChild(0).GetComponent<SceneTransitionButton>().NextRoom = arrow.Attributes["name"].Value;
                         arrowsGO[1].transform.GetChild(0).GetComponent<SceneTransitionButton>().ArrowDirection = arrow.Name;
+                        
                         float xMin = float.Parse(arrow.Attributes["xMin"].Value);
                         float xMax = float.Parse(arrow.Attributes["xMax"].Value);
                         float yMin = float.Parse(arrow.Attributes["yMin"].Value);
                         float yMax = float.Parse(arrow.Attributes["yMax"].Value);
+                        
                         arrowsGO[1].GetComponent<RectTransform>().anchorMin = new Vector2(xMin, yMin);
                         arrowsGO[1].GetComponent<RectTransform>().anchorMax = new Vector2(xMax, yMax);
                         break;
@@ -89,10 +93,12 @@ public class SceneTransitionController : MonoBehaviour
                         arrowsGO[2].SetActive(true);
                         arrowsGO[2].transform.GetChild(0).GetComponent<SceneTransitionButton>().NextRoom = arrow.Attributes["name"].Value;
                         arrowsGO[2].transform.GetChild(0).GetComponent<SceneTransitionButton>().ArrowDirection = arrow.Name;
+                        
                         float xMin = float.Parse(arrow.Attributes["xMin"].Value);
                         float xMax = float.Parse(arrow.Attributes["xMax"].Value);
                         float yMin = float.Parse(arrow.Attributes["yMin"].Value);
                         float yMax = float.Parse(arrow.Attributes["yMax"].Value);
+                        
                         arrowsGO[2].GetComponent<RectTransform>().anchorMin = new Vector2(xMin, yMin);
                         arrowsGO[2].GetComponent<RectTransform>().anchorMax = new Vector2(xMax, yMax);
                         break;
@@ -102,10 +108,12 @@ public class SceneTransitionController : MonoBehaviour
                         arrowsGO[3].SetActive(true);
                         arrowsGO[3].transform.GetChild(0).GetComponent<SceneTransitionButton>().NextRoom = arrow.Attributes["name"].Value;
                         arrowsGO[3].transform.GetChild(0).GetComponent<SceneTransitionButton>().ArrowDirection = arrow.Name;
+                        
                         float xMin = float.Parse(arrow.Attributes["xMin"].Value);
                         float xMax = float.Parse(arrow.Attributes["xMax"].Value);
                         float yMin = float.Parse(arrow.Attributes["yMin"].Value);
                         float yMax = float.Parse(arrow.Attributes["yMax"].Value);
+                        
                         arrowsGO[3].GetComponent<RectTransform>().anchorMin = new Vector2(xMin, yMin);
                         arrowsGO[3].GetComponent<RectTransform>().anchorMax = new Vector2(xMax, yMax);
                         break;
